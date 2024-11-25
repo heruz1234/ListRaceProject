@@ -154,7 +154,7 @@ export default function LandingPage() {
     <div>
         <Header />
         <Hero />
-     
+      
   
     <div>
          <div className='flex flex-wrap h-[160px] justify-between  px-[100px] m-[0,auto]  '>
