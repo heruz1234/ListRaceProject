@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero{
+    background-image: url(/public/Image/banner.jpg);
+}
+#review{
+    background-image: url(/public/Image/counter-banner.jpg);
+}
