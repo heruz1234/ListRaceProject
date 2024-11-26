@@ -153,11 +153,11 @@ export default function LandingPage() {
   return (
     <div>
         <Header />
-        <Hero />
+         <Hero />
       
   
     <div>
-         <div className='flex flex-wrap h-[160px] justify-between  px-[100px] m-[0,auto]  '>
+         <div className='flex flex-wrap md:h-[160vh] justify-between  px-[100px] m-[0,auto]  '>
             {IconNavigator.map((item,index)=>(
                 <Navigator
                  key={index}

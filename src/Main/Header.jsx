@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { GiHamburgerMenu } from "react-icons/gi";
 export default function Header() {
     const [menuIcon, setmenuIcon] = useState (false)
     const changeMenu =() => {
@@ -14,23 +14,24 @@ export default function Header() {
         "CONTACT"
     ]
   return (
-    <div className='fixed w-full  bg-white'>
-        <header className='flex items-center justify-between px-4 md:px-[100px] py-5 border '>
-            <p className='md:text-2xl font-bold uppercase'>list <span className='text-[red]'>race</span></p>
-            <ul className='hidden md:flex'>
-                    {
-                        menu.map((eachItem)=>(
-                            <li className='py-1 px-3 text-sm hover:cursor-pointer hover:text-red-400'>{eachItem}</li>
-                        ))
-                    }
-            </ul>
+    <div className=' bg-[#f1f1f1]'>
+        <header className='flex items-center, justify-between, px-4 md:px-[100px] py-5 w-[100%] '>
             <div className=' md:hidden'>
                     {
                         menuIcon === true ?
-                        <div onClick={changeMenu}>open</div>
-                        : <div onClick={changeMenu}>close</div> 
+                        <GiHamburgerMenu onClick={changeMenu} className='border border-[red] rounded-lg text-4xl p-1' />
+                        : <GiHamburgerMenu onClick={changeMenu} className='border border-[red] rounded-lg text-4xl p-1' />
                     }
             </div>
+            <p className='md:text-2xl font-bold uppercase pl-40 md:pl-0'>list <span className='text-[red]'>race</span></p>
+            <ul className='hidden md:flex'>
+                    {
+                        menu.map((eachItem)=>(
+                            <div className='py-1 px-3 text-sm hover:cursor-pointer hover:text-red-400'>{eachItem}</div>
+                        ))
+                    }
+            </ul>
+         
         
         </header>
         {
