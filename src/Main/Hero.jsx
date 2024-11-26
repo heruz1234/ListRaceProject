@@ -5,7 +5,7 @@ import { FaLocationCrosshairs } from "react-icons/fa6";
 export default function Hero() {
   return (
     <div>
-        <div id='hero' className='h-[85vh] bg-gray-400 w-[100%] text-center '>
+        <div id='hero' className='h-[85vh] md:h-[100vh] bg-gray-400 w-[100%] text-center '>
             <div className='m-auto w-[75%] pt-40'>
                <h1 className='text-3xl md:text-6xl font-bold text-white'>BEST PLACE TO FIND AND EXPLORE THAT ALL YOU NEED</h1>
                <p className='pt-5 text-xl text-white'>Find Best Place, Restaurant, Hotel, Real State and many more think in just One click</p>

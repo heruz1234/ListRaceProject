@@ -151,7 +151,7 @@ export default function LandingPage() {
     }
   ]
   return (
-    <div>
+    <div className='w-[100%]'>
         <Header />
          <Hero />
       
@@ -183,10 +183,10 @@ export default function LandingPage() {
     </div>
        
        
-    <div className='bg-[#f8fafb] text-center py-12 pt-8'>
+    <div className='bg-[#f8fafb] w-full text-center py-12 pt-8'>
         <h1 className='pt-16 pb-6 text-3xl font-bold text-gray-500 '>EXPLORE</h1>
         <p className=' text-lg text-gray-400'>Explore New place, food, culture around the world and many more</p>
-        <div className='flex flex-wrap justify-between py-10 px-28'>
+        <div className='flex flex-wrap justify-between py-10 md:px-28'>
             {ExploreMenu.map((item,index)=>(
                <Explore 
                     key={index}

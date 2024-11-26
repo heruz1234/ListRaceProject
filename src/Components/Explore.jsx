@@ -7,7 +7,7 @@ export default function Explore({data,key}) {
 
   return (
     <div>
-          <div key={key} className='w-[350px] bg-white mb-16  text-left hover:shadow-lg shadow-gray-500/70'>
+          <div key={key} className='w-[350px] m-[auto] md:ml-0 bg-white mb-16  text-left hover:shadow-lg shadow-gray-500/70'>
                 <img src={data.image_1} alt="" />
                 <div className='px-4 py-4' >
 
