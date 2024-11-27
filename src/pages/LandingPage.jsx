@@ -151,7 +151,7 @@ export default function LandingPage() {
     }
   ]
   return (
-    <div className='w-[100%]'>
+    <div>
         <Header />
          <Hero />
       
@@ -170,7 +170,7 @@ export default function LandingPage() {
     <div className='text-center m-auto'>
          <h1 className='text-[#505866] text-2xl font-bold py-4'>HOW IT WORKS</h1>
          <p className='text-[#a09e9c]  py-3'>Learn More about how our website works</p>
-         <div className='flex flex-wrap justify-between m-20'>
+         <div className='flex flex-wrap justify-center mt-4 md:justify-between md:m-20'>
          {WorkMenu.map((item,index)=>(
                 <WorkSection
                 key={index}
@@ -186,7 +186,7 @@ export default function LandingPage() {
     <div className='bg-[#f8fafb] w-full text-center py-12 pt-8'>
         <h1 className='pt-16 pb-6 text-3xl font-bold text-gray-500 '>EXPLORE</h1>
         <p className=' text-lg text-gray-400'>Explore New place, food, culture around the world and many more</p>
-        <div className='flex flex-wrap justify-between py-10 md:px-28'>
+        <div className='flex flex-wrap justify-center md:justify-between py-10 md:px-28'>
             {ExploreMenu.map((item,index)=>(
                <Explore 
                     key={index}
@@ -201,18 +201,21 @@ export default function LandingPage() {
     <div className='my-10 text-center mb-28 '>
         <h1 className=' py-4 text-2xl text-gray-600'>NEWS AND ARTICLES</h1>
         <p>Always upto date with our latest News and Articles</p>
-        <div  className='flex flex-wrap text-left justify-between px-28 mt-10'>
+        <div  className='flex flex-wrap text-left justify-center md:justify-between md:px-28 mt-10'>
             {ArticlesMenu.map((item,index)=>(
                 <Articles 
                      key={index}
                     data={item}
                 />
             ))}
+            
        
         </div>
   
     </div>
+       
         <Contact />
+        
         <Footer />
         <Copyright />
     </div>

@@ -8,7 +8,7 @@ export default function Explore() {
     <div className='bg-[#f8fafb] text-center py-12 pt-8'>
         <h1 className='pt-16 pb-6 text-3xl font-bold text-gray-500 '>EXPLORE</h1>
         <p className=' text-lg text-gray-400'>Explore New place, food, culture around the world and many more</p>
-        <div className='flex flex-wrap justify-between py-10 px-28'>
+        <div className='flex flex-wrap justify-between py-10  px-28'>
             <div className='w-[350px] bg-white mb-16  text-left hover:shadow-lg shadow-gray-500/70'>
                 <img src="/public/Image/e1.jpg" alt="" />
                  <div className='px-4 py-4' >

@@ -14,7 +14,7 @@ export default function Header() {
         "CONTACT"
     ]
   return (
-    <div className=' bg-[#f1f1f1] w-100'>
+    <div className=' bg-[#f1f1f1] w-full'>
         <header className=' flex items-center, justify-between, px-4 md:px-[100px] py-5 w-[100%] '>
             <div className=' md:hidden'>
                     {

@@ -4,7 +4,7 @@ export default function Articles({data,key}) {
   return (
     <div>
            
-            <div key={key} className='border w-[360px] shadow-lg hover:shadow-gray-500/50 shadow-black-500/50'>
+            <div key={key} className='border w-[360px] mt-10 md:mt-0 shadow-lg hover:shadow-gray-500/50 shadow-black-500/50'>
                 <img src={data.image} alt="" />
                 <div className='w-[350px] p-8'>
                     <h2>{data.head}</h2>
